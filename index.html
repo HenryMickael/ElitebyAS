@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>L'Elite cut & color</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- <link rel="stylesheet" href="style.min.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- map  -->
+    <script src="config.js"></script>
+    <script src="map.js"></script>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent">
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#home">
+        <img src="assets/vectordoréR.png" alt="Logo" width="40" height="40" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-end text-center"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Nos réalisations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Nos services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rdv">Prendre un RDV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Acceuil  -->
+    <section id="home" class="carousel-section mt-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="title-container text-center mb-4 mt-5">
+              <h1>L'Elite Cut & Color</h1>
+            </div>
+            <div
+              id="carouselExample"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/Caissebac.webp"
+                    class="d-block w-100"
+                    alt="Coiffure 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/Entrée.webp"
+                    class="d-block w-100"
+                    alt="Coiffure 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/bac.webp"
+                    class="d-block w-100"
+                    alt="Coiffure 3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/attente3.webp"
+                    class="d-block w-100"
+                    alt="Coiffure 4"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <ol class="carousel-indicators">
+                <li
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselExample" data-bs-slide-to="3"></li>
+              </ol>
+            </div>
+            <h2 class="title-container-suite text-center mb-4 mt-5">
+              By Arielle et Sabrina
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Nos réalisations -->
+    <section id="work" class="bg-dark">
+      <div class="container">
+        <h2 class="title-work text-center text-white">Nos réalisations</h2>
+        <div class="card-all1 row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./photo galerie/AvantApres1.jpg"
+                class="card-img-top"
+                alt="Image 1"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./photo galerie/AvantApres2.jpg"
+                class="card-img-top"
+                alt="Image 2"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./photo galerie/AvantApres3.jpg"
+                class="card-img-top"
+                alt="Image 3"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="card-all2 row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./photo galerie/AvantApres4.jpg"
+                class="card-img-top"
+                alt="Image 4"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./photo galerie/AvantApres5.jpg"
+                class="card-img-top"
+                alt="Image 5"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./photo galerie/AvantApres6.jpg"
+                class="card-img-top"
+                alt="Image 6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nos services -->
+    <section id="services" class="bg-light">
+      <div class="container d-flex flex-column justify-content-center">
+        <h2 class="title-services d-column text-center mb-4">Nos services</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Coupe</h5>
+                <p class="card-text">
+                  Optez pour une nouvelle coupe de cheveux qui correspond à
+                  votre style et votre personnalité. Nos coiffeurs expérimentés
+                  sauront vous conseiller et réaliser la coupe de vos rêves.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Coloration</h5>
+                <p class="card-text">
+                  Transformez votre look avec notre service de coloration
+                  professionnel. Que vous souhaitiez des reflets subtils, une
+                  coloration complète ou des mèches audacieuses, notre équipe
+                  saura créer la couleur parfaite pour vous.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Mèches</h5>
+                <p class="card-text">
+                  Apportez de la dimension à vos cheveux avec nos mèches
+                  expertes. Qu'il s'agisse de mèches délicates pour un effet
+                  naturel ou de mèches plus prononcées pour un look tendance,
+                  nous sommes là pour réaliser vos envies.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title text-center">Soin</h5>
+                <p class="card-text">
+                  Dorlotez vos cheveux avec nos traitements capillaires
+                  nourrissants. Nous offrons une gamme de soins adaptés à
+                  différents types de cheveux pour les revitaliser, les hydrater
+                  et les rendre plus sains et éclatants.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body align-items-center">
+                <h5 class="card-title text-center">Lissage</h5>
+                <p class="card-text">
+                  Obtenez des cheveux lisses et soyeux avec notre service de
+                  lissage professionnel. Que vous ayez des boucles, des
+                  frisottis ou des cheveux indisciplinés, notre équipe utilisera
+                  les techniques les plus avancées pour vous offrir un lissage
+                  impeccable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- rdv  -->
+    <!-- Prendre rendez-vous sur Planity -->
+    <section
+      id="rdv"
+      class="container-fluid bg-dark d-flex align-items-center justify-content-center"
+    >
+      <div class="row">
+        <div class="opening col-lg-6 opening text-white flex-column">
+          <h2>Nos horaires d'ouvertures</h2>
+          <br />
+          <span
+            itemprop="openingHoursSpecification"
+            itemscope
+            itemtype="https://schema.org/OpeningHoursSpecification"
+          >
+            <meta itemprop="dayOfWeek" content="Monday" />
+            <meta itemprop="opens" content="00:00" />
+            <meta itemprop="closes" content="00:00" />
+            Lundi : Fermé </span
+          ><br />
+          <span
+            itemprop="openingHoursSpecification"
+            itemscope
+            itemtype="https://schema.org/OpeningHoursSpecification"
+          >
+            <meta itemprop="dayOfWeek" content="Tuesday" />
+            <meta itemprop="opens" content="09:00" />
+            <meta itemprop="closes" content="19:00" />
+            Mardi au Jeudi : 9h - 19h </span
+          ><br />
+          <span
+            itemprop="openingHoursSpecification"
+            itemscope
+            itemtype="https://schema.org/OpeningHoursSpecification"
+          >
+            <meta itemprop="dayOfWeek" content="Friday" />
+            <meta itemprop="opens" content="10:00" />
+            <meta itemprop="closes" content="20:00" />
+            Vendredi : 10h - 20h </span
+          ><br />
+          <span
+            itemprop="openingHoursSpecification"
+            itemscope
+            itemtype="https://schema.org/OpeningHoursSpecification"
+          >
+            <meta itemprop="dayOfWeek" content="Saturday" />
+            <meta itemprop="opens" content="08:00" />
+            <meta itemprop="closes" content="18:00" />
+            Samedi : 8h - 18h </span
+          ><br />
+          <span
+            itemprop="openingHoursSpecification"
+            itemscope
+            itemtype="https://schema.org/OpeningHoursSpecification"
+          >
+            <meta itemprop="dayOfWeek" content="Sunday" />
+            <meta itemprop="opens" content="00:00" />
+            <meta itemprop="closes" content="00:00" />
+            Dimanche : Fermé
+          </span>
+        </div>
+        <div class="take-appointment col-lg-6 text-center flex-column">
+          <h2 class="text-white mt-4">Prendre rendez-vous :</h2>
+          <a
+            href="https://www.planity.com/lelite-cut-color-57330-hettange-grande"
+            target="_blank"
+            class="btn btn-light mt-4"
+            >Rdv en ligne</a
+          >
+          <h2 class="text-white mt-4">Ou par téléphone au:</h2>
+          <a href="tel:+33678079268" class="btn btn-light mt-4"
+            ><i class="bi bi-telephone-forward"></i> +33 6 78 07 92 68</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- contact  -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div id="map" style="width: 350px; height: 300px"></div>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center">
+            <div
+              class="address"
+              itemscope
+              itemtype="http://schema.org/PostalAddress"
+            >
+              <h2>Adresse</h2>
+              <p>
+                <span itemprop="name">L'Elite Cut & Color by A.S</span> <br />
+                <span itemprop="streetAddress">4 Rue des Ateliers</span> <br />
+                <span itemprop="addressLocality">Hettange-Grande</span> <br />
+                <span itemprop="postalCode">57330</span>
+              </p>
+              <p>Tel : <span itemprop="telephone">06 78 07 92 68</span></p>
+              <p>
+                Email :
+                <a href="mailto:lelitecutcolor@gmail.com" itemprop="email"
+                  >lelitecutcolor@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center">
+      <div class="container">
+        <div
+          class="icons-container d-flex justify-content-center align-items-center"
+        >
+          <a
+            class="bi bi-instagram text-white"
+            href="https://instagram.com/lelitecutandcolor?igshid=YmMyMTA2M2Y="
+            target="_blank"
+          ></a>
+          <a
+            class="bi bi-facebook text-white"
+            href="https://www.facebook.com/profile.php?id=100082958246140"
+            target="_blank"
+          ></a>
+          <a
+            class="bi bi-whatsapp text-white"
+            href="https://wa.me/33678079268"
+            target="_blank"
+          ></a>
+          <a
+            class="bi bi-envelope-at text-white"
+            href="mailto:lelitecutcolor@gmail.com"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
+      <div class="developpeur">© &lt;/&gt;Milkago 2023</div>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>
