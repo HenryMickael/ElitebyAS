@@ -19,5 +19,6 @@ function initMap() {
   });
 }
 loadScript(
-  `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`
+  // `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`
+  `https://maps.googleapis.com/maps/api/js?key=AIzaSyAoSOJ2L9LyGLwiWv-aWMKHQbtv6XDOmco&callback=initMap`
 );
